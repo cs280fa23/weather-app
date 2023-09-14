@@ -1,12 +1,6 @@
-# Todo App
-A straightforward web application to manage your daily tasks using different programming paradigms: structured, functional, and object-oriented.
+# Weather App
 
-## Features
-- Add new tasks.
-- Mark tasks as completed.
-- Filter tasks by their status: All, Active, or Completed.
-- Clear completed tasks.
-- Mark all tasks as complete with a single click.
+A simple web application that uses AccuWeather API.
 
 ## Run locally
 - Clone this repository.
