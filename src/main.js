@@ -21,9 +21,13 @@ function getWeatherForecast(event) {
 }
 
 function getLocationKey(city) {
-  // TODO get the "location key" for the given `city`!
-  //  then call getCurrentCondition to retrieve weather forecast for it!
-  console.log(city);
+  fetch(`${BASE_URL}/locations/v1/cities/search?apikey=${API_KEY}&q=${city}`)
+    .then(response => response.json())
+    .then(data => {
+      const location = data[0];
+      console.log(location);
+    })
+    .catch(err => console.log(err));
 }
 
 function getCurrentCondition(location) {
